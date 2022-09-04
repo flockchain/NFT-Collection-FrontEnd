@@ -161,7 +161,7 @@ export default function Home()
       const signer = await getProviderOrSigner(true);
       //Get the address associated to the signer which is connected to MetaMask
       const address = await signer.getAddress();
-      if(address.toLowerCase() === _owner.toLowercase())
+      if(address.toLowerCase() === _owner.toLowerCase())
       {
         setIsOwner(true);
       }
