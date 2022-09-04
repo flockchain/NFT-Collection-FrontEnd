@@ -83,7 +83,7 @@ export default function Home()
       await checkIfPresaleStarted();
     }catch(err)
     {
-      console.log(error);
+      console.error(err);
     }
   };
 
@@ -127,7 +127,7 @@ export default function Home()
       //Date.now()/1000 returns the current time in seconds
       //We compare if the _presaleEnd timestamp is less than the current timestamp,
       //which means presale whas ended
-      const hasEnded = _presale.lt(Math.floor(Date.now() / 1000));
+      const hasEnded = _presaleEnded.lt(Math.floor(Date.now() / 1000));
       if(hasEnded)
       {
         setPresaleEnded(true);
@@ -165,7 +165,7 @@ export default function Home()
       {
         setIsOwner(true);
       }
-    }catch(error)
+    }catch(err)
     {
       console.error(err);
     }
