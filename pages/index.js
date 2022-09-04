@@ -72,7 +72,7 @@ export default function Home()
       //We need a signer here since it's a 'write' transaction.
       const signer = await getProviderOrSigner(true);
       //Create a new instance of the Contract with a Signer, which allows update methods
-      const whitelistContract = Contract(NFT_CONTRACT_ADDRESS, abi, signer);
+      const whitelistContract = new Contract(NFT_CONTRACT_ADDRESS, abi, signer);
       //call the startPresale from the contract
       const tx = await whitelistContract.startPresale();
       setLoading(false);
