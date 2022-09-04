@@ -283,7 +283,7 @@ export default function Home()
     {
       return(
         <div>
-          <div className={styles.description}>Presale hasn't started!</div>
+          <div className={styles.description}>Presale hasnt started!</div>
         </div>
       );
     }
