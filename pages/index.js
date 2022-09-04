@@ -93,7 +93,7 @@ export default function Home()
     {
       //Get the provider from web3Modal, which in our case is MetaMask
       //No need for the signer here, as we are only reading state from the blockchain
-      const provider = await getProviderorSigner();
+      const provider = await getProviderOrSigner();
       //We connect to the Contract using a Provider, so we will only 
       //have read only access
       const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, provider);
@@ -182,7 +182,7 @@ export default function Home()
       //We connect to the Contract using a Provider, so we will have read-only access to the Contract
       const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, provider);
       //call the tokenIds from the Contract
-      const _tokenIds = await nftContract._tokenIds();
+      const _tokenIds = await nftContract.tokenIds();
       //_tokenIds is a 'Big Number'. We need to convert the Big Number to a string 
       setTokenIdsMinted(_tokenIds.toString()); 
     }catch(err)
