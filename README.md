@@ -1,3 +1,16 @@
+Hello visitor,
+
+this is the Front-End of my NFT-Collection. You can find the related Back-End in my NFT-Collection-BackEnd Repository.
+The reason why they are seperated, is because you don't need to have these in one project. The Backend is written and deployed
+to the goerli-testnet in Solidity, I could build another Front-End to interact with the same Smart-Contract.
+They are related, but not depended.
+
+Before you can see the to the Smart-Contract related informations, you have to sign-in with your MetaMask account and choose the goerli-testnetwork.
+
+Here is the link to the webpage: https://nft-collection-front-end.vercel.app/
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
