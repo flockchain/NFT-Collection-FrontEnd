@@ -2,7 +2,7 @@ export default function handler(req, res) {
     //Get the TokenId from the query parameters
     const tokenId = req.query.tokenId;
     //As all the images are uploaded on github, we can extract the images from github directly.
-    const image_url = "https://github.com/flockchain/NFT-Collection-FrontEnd/tree/main/public";
+    const image_url = "https://raw.githubusercontent.com/LearnWeb3DAO/NFT-Collection/main/my-app/public/cryptodevs/";
     //The api is sending back metadata for a Crypto Dev
     //To make our collection comaptible with Opensea, we need to follow some Metadata standards
     //when sending back the response from the api
