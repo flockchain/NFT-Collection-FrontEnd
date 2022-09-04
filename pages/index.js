@@ -156,7 +156,7 @@ export default function Home()
       //have read only access to the Contract
       const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, provider);
       //Call the owner function from the Contract
-      const _owner = await nftContract.getOwner();
+      const _owner = await nftContract.owner();
       //We will get the signer now to extract the address of the currently connected MetaMask account
       const signer = await getProviderOrSigner(true);
       //Get the address associated to the signer which is connected to MetaMask
